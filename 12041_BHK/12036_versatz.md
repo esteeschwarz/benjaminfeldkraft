@@ -24,7 +24,7 @@ Sie haben diesen text hier aufgerufen, weil SIE wissen wollten, ob er in einem f
 bitte laden Sie also den text bei bedarf
 - hier als [pdf](https://wholelifeacademy.hkw.de/index.php/s/wnpcWpmk8oX3To3)
 - hier als [word dokument](https://wholelifeacademy.hkw.de/index.php/s/76x45BK6SFDx8c5)
-- hier: [github](https://github.com/esteeschwarz/benjaminfeldkraft/commit/efcb0c550ffa0a673e51a078cea5115b7aa12a3c), wenn Sie der meinung sind, der text ist noch nicht fertig (dieser meinung bin ich auch)
+- hier: [github](https://github.com/esteeschwarz/benjaminfeldkraft/tree/main/12041_BHK), wenn Sie der meinung sind, der text ist noch nicht fertig (dieser meinung bin ich auch)
 herunter. Oder gelangen sie von der jeweiligen version zu dieser hier online ausgabe über [diesen link](https://ada-sub.rotefadenbuecher.de/12036-bhk).
 Sie haben mir hiermit freundlich notiz davon gegeben, dasz und wann Sie meinen text gelesen haben.
 

@@ -20,11 +20,14 @@ heute an einem der geburstage am 12. april, wo ich öfter dort am haus vorbeisch
 #### 2021.
 die auseinandersetzung findet nicht erst heute und hier statt, der text ist im rahmen einer seminaraufgabe bereits veröffentlich worden. den ort habt ihr gewählt, das publikum bleibt sich immer gleich; es hört sich selbst gerne reden und never zu. darum findet ihr mich hier wieder, okan, stephan, konsorten. wo der text endet, müssen Sie entscheiden.
 #### meta
-Sie haben diesen text hier aufgerufen, weil SIE wissen wollten, ob er in einem forum aus 5 tauglich ist vorgelesen/diskutiert/"gewertschätzt" zu werden und ICH eine wie diese bewerbung hier nicht als einseitiges verfahren begreife und meine (bewerbung) Sie deshalb nur zu dieser hier ausgabe des textes führte.
+Sie haben diesen text hier aufgerufen, weil SIE wissen wollten, ob er in einem forum aus 5 tauglich ist vorgelesen/diskutiert/"gewertschätzt" zu werden und ICH eine wie diese bewerbung hier nicht als einseitiges verfahren begreife und meine (bewerbung) Sie deshalb nur zu dieser hier ausgabe des textes führte.[^1]
 bitte laden Sie also den text bei bedarf
 - hier als [pdf](https://wholelifeacademy.hkw.de/index.php/s/wnpcWpmk8oX3To3)
 - hier als [word dokument](https://wholelifeacademy.hkw.de/index.php/s/76x45BK6SFDx8c5)
 - hier: [github](https://github.com/esteeschwarz/benjaminfeldkraft/tree/main/12041_BHK), wenn Sie der meinung sind, der text ist noch nicht fertig (dieser meinung bin ich auch)
-herunter. Oder gelangen sie von der jeweiligen version zu dieser hier online ausgabe über [diesen link](https://ada-sub.rotefadenbuecher.de/12036-bhk).
-Sie haben mir hiermit freundlich notiz davon gegeben, dasz und wann Sie meinen text gelesen haben.
+herunter. 
+Oder gelangen sie von der jeweiligen version zu dieser hier online ausgabe über [diesen link](https://ada-sub.rotefadenbuecher.de/12036-bhk).
+Sie haben mir damit freundlich notiz davon gegeben, dasz und wann Sie meinen text gelesen haben.
 
+
+[^1]:	static: Sie mögen meinen, es nur mit einem versuch zu tun zu haben. dem ist nicht so. ich begreife jedoch meine (litararische) tätigkeit nicht als aufgabe, zu vollkommen willkürlich festgesetzten terminen mit einem :produkt: aufzuwarten, das zu diesem zeitpunkt (verkauft) wird. die (produktwerdung) des vorliegenden textes geschieht explizit zu dem zeitpunkt, den Sie als :lesung: vorgesehen haben. ob Sie die flexibilität besitzen, Ihre interpretation bis dahin offen zu halten und den mut, den text zu diesem moment :so: zu lesen, wie er dann vorliegt, zeigt Ihre kompetenz, (literatur) auch anders als LINEAR zu begreifen.

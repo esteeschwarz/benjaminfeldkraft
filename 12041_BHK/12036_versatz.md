@@ -1,10 +1,13 @@
 ## 12036.BHK.versatztexte
 ## 10291.NT OST
 # things i learned at school.
+triggerwarnung? dieser text enthält eine passage in der einem mädchen von ein paar jungen die hosen runtergezogen werden. die passage ist aus textdramaturgischen gründen auf 1988 datiert, wir haben uns jedoch entschieden, sie 1986 stattfinden zu lassen.
 #### 1987. 
 die reaktorkatastrophe ist noch nicht ganz vorbei. wir dürfen immer noch keine äpfel vom baum im garten essen, die ich mit pfeil und bogen runterschiesze. wir haben in diesem jahr kein gemüse angepflanzt. es gibt auch weniger gemüse in der kaufhalle.
 #### 1988.
 heute haben wir anja die hosen ausgezogen, das war geil. wir haben sie festgehalten zu dritt, also sven, mike und ich. sven an den beinen, mike an den armen und ich habe die hosen runtergezogen. war geil. sie hat gestrampelt und danach ist sauer auf mich gewesen, die andern warn ihr ja sind ihr ja egal. ich habe sie nach der schule angerufen wie immer, sie geht nicht ran.
+##### NT.
+ich musz diese episode zurückdatieren, glaube ich. ich denke eher, wir waren, hoffe, wir waren erst ca. 9,10..., als die aktion passierte. okan, der später eine rolle spielt, war jdfs. erst 10. also erinnern wir uns lieber, dasz es 1986 gewesen ist, sagen wir vor dem sommer, da waren wir zehn jahre alt.
 #### 1990. 
 ich treffe die andere anja, sven und mike an der deutschen oper. sie sind heute rübergekommen, damit ich ihnen charlottenburg zeigen kann. wir warn bei mcdonalds am zoo.
 #### 1996.

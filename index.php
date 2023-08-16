@@ -2,9 +2,9 @@
 
 // $txt = $_REQUEST["title"]; //request-  mit q funktioniert, duck wird geschrieben
 // $ref = $_REQUEST["ref"];
-include("../../puller.php");
+include("../../assets/puller.php");
 // include("../../mdpull-hulx.php");
-include("../../benpull.php");
+include("../../assets/benpull.php");
 
 
 // $myfile = fopen("pings/pingdata.csv", "a+") or die("FUCT! I forgot to tie my shoes!");

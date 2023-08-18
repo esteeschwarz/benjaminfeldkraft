@@ -1,0 +1,209 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>eins - benjamin</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var html = document.querySelector('html');
+            var sidebar = null;
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="01.01.html"><strong aria-hidden="true">1.</strong> eins</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="01.01b.html"><strong aria-hidden="true">1.1.</strong> eins</a></li><li class="chapter-item expanded "><a href="01.02.html"><strong aria-hidden="true">1.2.</strong> zwei</a></li><li class="chapter-item expanded "><a href="01.03.html"><strong aria-hidden="true">1.3.</strong> drei</a></li><li class="chapter-item expanded "><a href="01.03b.html"><strong aria-hidden="true">1.4.</strong> vier</a></li><li class="chapter-item expanded "><a href="01.04.html"><strong aria-hidden="true">1.5.</strong> fuenf</a></li></ol></li><li class="chapter-item expanded "><a href="02.01.html"><strong aria-hidden="true">2.</strong> zwei</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="02.02.html" class="active"><strong aria-hidden="true">2.1.</strong> eins</a></li><li class="chapter-item expanded "><a href="02.03.html"><strong aria-hidden="true">2.2.</strong> zwei</a></li><li class="chapter-item expanded "><a href="02.04.html"><strong aria-hidden="true">2.3.</strong> drei</a></li></ol></li><li class="chapter-item expanded "><a href="03.01.html"><strong aria-hidden="true">3.</strong> drei</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="03.02.html"><strong aria-hidden="true">3.1.</strong> eins</a></li><li class="chapter-item expanded "><a href="03.03.html"><strong aria-hidden="true">3.2.</strong> zwei</a></li><li class="chapter-item expanded "><a href="03.04.html"><strong aria-hidden="true">3.3.</strong> drei</a></li><li class="chapter-item expanded "><a href="03.05.html"><strong aria-hidden="true">3.4.</strong> vier</a></li><li class="chapter-item expanded "><a href="03.06.html"><strong aria-hidden="true">3.5.</strong> fuenf</a></li></ol></li><li class="chapter-item expanded "><a href="04.01.html"><strong aria-hidden="true">4.</strong> vier</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="04.02.html"><strong aria-hidden="true">4.1.</strong> eins</a></li><li class="chapter-item expanded "><a href="04.03.html"><strong aria-hidden="true">4.2.</strong> zwei</a></li><li class="chapter-item expanded "><a href="04.04.html"><strong aria-hidden="true">4.3.</strong> drei</a></li><li class="chapter-item expanded "><a href="04.05.html"><strong aria-hidden="true">4.4.</strong> vier</a></li></ol></li><li class="chapter-item expanded "><a href="05.01.html"><strong aria-hidden="true">5.</strong> fuenf</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="05.02.html"><strong aria-hidden="true">5.1.</strong> eins</a></li><li class="chapter-item expanded "><a href="05.03.html"><strong aria-hidden="true">5.2.</strong> zwei</a></li><li class="chapter-item expanded "><a href="05.04.html"><strong aria-hidden="true">5.3.</strong> drei</a></li><li class="chapter-item expanded "><a href="05.05.html"><strong aria-hidden="true">5.4.</strong> vier</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">benjamin</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h2 id="2-der-erste-anfang"><a class="header" href="#2-der-erste-anfang">2. Der Erste Anfang</a></h2>
+<p>Wohin wollen wir uns also begeben. Da muß ein Punkt stehen, weil es keine Frage an Sie, sondern Aufforderung bleibt, mir zu folgen, wohin auch und es n. nicht wissen, wir? Doch. Ich mochte ein Schiff ausführen auf die Hohe See, Abenteuer erleben, Versuchungen widerstehen, geläutert werden und zurückkehren: in den Heimathafen, den Sie für mich bilden. Sie sind der unverrückbare Punkt dieser Geschichte, die ich mir ausdenken werde. Also sein Sie standhaft, lernen mich zu lesen und folgen Sie mir, wohin wir uns jetzt begeben werden, wenn... was ich in mir in den Momenten Seiner Entstehung bis zum letzten mir vorzustellen wagte und: Sie jetzt schon eine weitere Seite lesen – wir da ankommen wir beide, wo ich uns haben wollte: in der Imagination. Denn nichts anderes ist das hier. Es läuft ein Prozeß von Vorstellungen zwischen uns ab, den keiner lenken kann. Ich nicht, Sie nicht. Aber Sie lesen weiter, das ist das Ziel *meiner *Vorstellung gewesen und deshalb kann ich jetzt dem Buch die Schrift überlassen, die es für richtig hält, zu sprechen. Damit beginnt aber endlich</p>
+<h2 id="die-geschichte"><a class="header" href="#die-geschichte">Die Geschichte</a></h2>
+<p>Seamus Geoffrey Flowers was unable to speak the moment his wife called him a dirty bloodbag of a husband. It was not a feeling of guilt or silent agreeance that made him quietly suffer her loud and strong voice which had a pin on him - this was not new to him. In fact he was used to that for a long time of years-gone-by since he was twentyone. Time and space had moved him slowly towards the end of his thirties and he was not able to say wether it was luck or great pleasure that had brought him so far. Sticking together in some lifelong and childless relationship with freedom and personal development by both discovered for themselves to be the most outrageous achievements that one can truly not live without, she, the waitress and he who waits, had come to a point in life when their brains divided that were glued each to the other for the longest time again; which forced them to take a look on their lives without the softening toner of words that were only whispered. Mr Flowers, or Seamus or Geoffrey lost his voice the very moment his wife shouted at him the usual words in the usual high and enerving tone. But not everything concerning her words has been as usual: she suddenly shouted <em>in German.</em> 
+Wenn wir die genauen Worte nehmen, so waren es diese: dirty-dreckiger, bloodbag-Blutsack of a husband von einem Ehemann. Was konnte das bedeuten, hatten sie angefangen in seinem Kopf zu rotieren, ohne daß er sich eine sinnvolle Erklärung geben konnte. Sinnvolle Erklärungen zu geben, war aber eines der von ihm bewegten Felder in dieser Beziehung. Er kam also nicht vorwärts in seinem Denken, weil ihm keine Übersetzung einfiel oder besser: keine erklärende Erwiderung, die sie davon überzeugen sollte, daß sie <em>meschugge</em> sei. Hier kam er sich selbst <em>meschugge</em> vor wie ein Dorfmeschuggener, den die Bevölkerung so wie er eben ist akzeptiert und sein läßt aber nicht für voll nimmt, niemand im Dorf. So war es, und die plötzlich einsetzende Leere im Kopf war ein sicheres Zeichen dafür, daß er immer n. recht hatte. Sonst würde ihn Ekel befallen ob seiner selbst, der jemandem (ihr) Unrecht getan hatte. Aber er verstummte einfach, sagte nichts mehr, schwieg. Da war also kein Unrecht geschehen, denn er schwieg ja. Und wenn er n. einmal genau darüber nachdachte? 
+<em>Wenn wir jetzt <em>n.</em> mal über Freiheit nachdenken,</em> ist ein passend in einem Lied des Finnen m.a. aufgehobenes Zitat von wer eigentlich also darin der Frage nachging, wie es eine absolute Freiheit gäbe. Diese müßte sich doch, denke ich, darin fassen lassen, wie man den Satz umgestalten könnte je nach den Bedürfnissen der in ihm verkehrenden Protagonisten. Wenn es also (Seamus in diesem Falle) jemandem wichtig vorkäme, in einer an ihn herangetragenen Aggression ein Unrecht zu erkennen, welches nur durch ein selbst von ihm begangenes auszugleichen wäre, dann müßte er in dieser meiner Welt hier irgendetwas getan haben oder n. tun, damit er seine Sprache wiederfinden könnte nach einer Aufhebung der Blockade. Was lassen wir ihn also begehen, um seine Frau (Maggie, Maude o.s.ä.) in ein rechtes Verhältnis zu ihrer Anschuldigung zu setzen? Es stehen ein paar übliche Szenen bereit, die jeder kennt, der nicht allein geblieben ist bis jetzt; wir müssen nicht lange überlegen, um auf ein passendes Motiv zu stoßen, bspw. äh.. Vernachlässigung? 
+Ja, Vernachlässigung. Seiner selbst, der Ehe u. einhergehendes ist ihm ja gut zu überhören gelungen bisher, aber wieges. die deutschen Worte aus seines Weibes Mund hatten ihn überrumpelt und stumm gemacht und für einen kurzen Moment eine Schuld in ihm aufkeimen lassen. Das reicht uns als Grund, als Same, ihn ganz für schuldig zu befinden. Denn wos fruchtbarer Boden ist... Dann schuldig der Vernachlässigung. Aber was hatte er nicht schon auf sich genommen, er würde das tragen. Es käm nicht darauf an, wie schwer das Schicksal einen schlägt, sondern wie sehr man darunter leidet. 
+Sublimation sei nächstens 1 die gelungene Überführung primitiver Triebregungen in sozial höher bewertete Fertigkeiten. Seamus wird, wenn er seinen Vorstellungen weiter dienen möchte und dabei nicht als Ich unter einem von ihm jetzt zwar akzeptierten, aber in seinen tiefen, infantilen Schichten n. immer als Unrecht empfundenen Niederschlag seines Freiheitsdranges so sehr leiden will, daß die Lähmung fortbesteht, sich für einen Weg entscheiden müssen, den seine Triebe nehmen dürfen, ohne ihm zu schaden. Die Vorstellungskraft zB. ist so ein Brunnen wie* dunkel und tief, ein wahrer Brunnen war das Herz Nikolaus Tarabas'*. Das lernter von dem richtigen Joseph Roth dazu, der ein heiliger Trinker war und wenn er nicht getrunken hätte, wäre er jetzt tot. Welche Schlüsse daraus für 1 eigenes Leben zu ziehen sind, bleibt Ihrer V.kraft überlassen - mich jedenfalls rührte Alkohol nicht an. Seamus schon, er trinkt in ruhigen Abenden von einem unendlichen Krug <em>uisce batha</em> zur Unterhaltung, weil er dabey besser nachdenken kann, sagt er. M. trinkt nicht, weil ihr jdfs. <em>Aquavit</em> zu männlich ist. Das findet er gut, das Getränk erscheint ihm kostbar. Wir sehen sie sobald in Theorien versunken über was ist männlich und was darf das wert sein, nur wirklich Wichtiges heben sie sich für einen Psychiater auf, z.B., den Stellvertreter.</p>
+<p>Vielleicht habe ich früher Nebensätze in Finalsätzen ausklingen lassen, die einen weiteren Umgang mit ihnen verbieten. Daß es einen schütteln würde und frieren, wenn sich das Ende so einfach anstellte. Man macht aber viele Versuche, die manchem geglückt sind, sich das als Beginn auszumalen. In der vorgängigen Schrift zum Beispiel gab man sich alle Mühe, den Leser nicht merken zu lassen, wie aussichtslos sein Unterfangen war, die hergestellte Situation zu begreifen. Immer wurde Hoffnung geschürt auf Erlösung. In anderen Sphären zwar als unseren bekannten Erdenreichen, jedoch: wir wurden mit der Hoffnung schlafen getrieben, daß sich das Wasser erinnert. In einer n. weiter vorgängigen Schrift, die zum Zwecke der Erbauung über agnostischen Lebensformeln aufrecht erhalten war und bis in die heutige Zeit lange hineinreichte, sagte ein unwichtiger Mann mit der Erlaubnis zu sprechen, von den Nichtglaubenden, daß man ein Gefangener ihres Zweifels an der absoluten Existenz sein müßte, um mit ihnen verhandeln zu können. Wer schließlich den Mut besessen hatte, sie anzutasten, wenn sie sich ihm schon offenbarte, der wäre nicht mehr weit davon entfernt, sie (die Existenz) entweiht hinter sich zu lassen als durchschrittene Passage <em>durch das Reich der Notwendigkeit in das der Freiheit.</em> Welche Freiheit er meint... Frei von R. sei man ohnehin schon geboren doch nur der spärliche Unwille eigner Vorgänger machte auch unabhängig von dem wir sonst n. entscheidungslos ausgeliefert sein könnten. Denn neu und belebt solln wir uns ja aufrichten nach der ersten Altersstufe. Wann das war... daran kann sich oder Seamus mich nicht erinnern, glaubt vielleicht an Stufentheorien, aber sicher ist das auch nicht, es wäre das 21. Jahr, das mich schwanger im Glauben in eine Richtung zwang, wo ich auf rollende Steine traf, durch andere für mich in Bewegung geraten, lange bevor an Auseinandersetzung mit dem gelernten überhaupt zu denken war und alles nur Stoff, Stoff, Stoff... den ich besser aufgenommen hätte angesichts der heutigen Notwendigkeit, ihn zu wissen blind und in erstmaliger Verzückung. Ich bitte Sie, lernen Sie aufrichtig Latein, wenn ihnen in jungen Jahren der Keim dazu gelegt wird - so Sie dann alt genug sind für Das Buch; wenn die Chance vertan ist, lesen Sie es eben jetzt, und in jedem Fall geben Sie es Ihren Kindern ans Herz, nein: zwingen Sie sie zum Latinum. Wir werden den Patentoni brauchen, der mich darin prüft und ob ich es mit dem nötigen Ernst tat über allem anhänglich Gegebenen. Und das macht nur das Erbe. Aber es vor allen Dingen ernstnehmen. </p>
+<p>Und die Geschichte: was hat sie mit Geoffrey zu tun? Er ist vielleicht einmal aus Irland eingewandert in das schöne, neue und große Land America, also nicht er, sondern seine Vorfahren: unsere Vorgänger. Das bringt uns daselbst ins Spiel, wo wir es mit ihm zu tun haben werden im angehenden 3. Jahrtausend. Er ist ein bloodbag. Seine Frau, die ihn intuitiv mit diesem Ausdruck belegte, war sich nachher unsicher, wie sie zu diesem Wort schließlich gekommen ist. Er selbst fand etwas von seiner Vergangenheit darin aufgehoben, das ihn kennzeichete, aber zeichnete in den Farben der Urahnen, deren Geschichte hier also n. nicht beendet war: er war der Nachkomme von Generationen kleiner, rothaariger Irenkatholiken, so man in ihrer Konsequenz und Sturheit, dem missionarischen Eifer und der armutsvollen Gläubigkeit in Irland und seinen Kolonien n. immer findet. Aber das soll nicht unser Problem sein. Hier geht es um mehr. Die Geschichte, wie unser Kapitel anfing, sollte handeln von seinem Ringen mit dem Schicksal wie Jakob am Jabbok, von seiner Angst vor dem Meerkater wie vor einem flammenbewehrten Cherub, von seiner Qual durch die Littaney (annalivia) wie durch die schwer verständliche Zungenrede eines Süßenweintrunkenen, kurz, von all dem soll gesprochen werden, dessen ihm Irlands beraubt war um ihn dem Land zuzuführen, das die wahre Heimat schon immer gewesen ist, die ihm versprochen war und die nun als Braut auf ihn wartete, של זהב, die goldene Stadt a la fin du chemin des calices. </p>
+<p>#buch2</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="02.01.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next" href="02.03.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="02.01.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="02.03.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

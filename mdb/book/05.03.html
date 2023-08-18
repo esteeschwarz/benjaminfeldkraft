@@ -1,0 +1,250 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>zwei - benjamin</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var html = document.querySelector('html');
+            var sidebar = null;
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="01.01.html"><strong aria-hidden="true">1.</strong> eins</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="01.01b.html"><strong aria-hidden="true">1.1.</strong> eins</a></li><li class="chapter-item expanded "><a href="01.02.html"><strong aria-hidden="true">1.2.</strong> zwei</a></li><li class="chapter-item expanded "><a href="01.03.html"><strong aria-hidden="true">1.3.</strong> drei</a></li><li class="chapter-item expanded "><a href="01.03b.html"><strong aria-hidden="true">1.4.</strong> vier</a></li><li class="chapter-item expanded "><a href="01.04.html"><strong aria-hidden="true">1.5.</strong> fuenf</a></li></ol></li><li class="chapter-item expanded "><a href="02.01.html"><strong aria-hidden="true">2.</strong> zwei</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="02.02.html"><strong aria-hidden="true">2.1.</strong> eins</a></li><li class="chapter-item expanded "><a href="02.03.html"><strong aria-hidden="true">2.2.</strong> zwei</a></li><li class="chapter-item expanded "><a href="02.04.html"><strong aria-hidden="true">2.3.</strong> drei</a></li></ol></li><li class="chapter-item expanded "><a href="03.01.html"><strong aria-hidden="true">3.</strong> drei</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="03.02.html"><strong aria-hidden="true">3.1.</strong> eins</a></li><li class="chapter-item expanded "><a href="03.03.html"><strong aria-hidden="true">3.2.</strong> zwei</a></li><li class="chapter-item expanded "><a href="03.04.html"><strong aria-hidden="true">3.3.</strong> drei</a></li><li class="chapter-item expanded "><a href="03.05.html"><strong aria-hidden="true">3.4.</strong> vier</a></li><li class="chapter-item expanded "><a href="03.06.html"><strong aria-hidden="true">3.5.</strong> fuenf</a></li></ol></li><li class="chapter-item expanded "><a href="04.01.html"><strong aria-hidden="true">4.</strong> vier</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="04.02.html"><strong aria-hidden="true">4.1.</strong> eins</a></li><li class="chapter-item expanded "><a href="04.03.html"><strong aria-hidden="true">4.2.</strong> zwei</a></li><li class="chapter-item expanded "><a href="04.04.html"><strong aria-hidden="true">4.3.</strong> drei</a></li><li class="chapter-item expanded "><a href="04.05.html"><strong aria-hidden="true">4.4.</strong> vier</a></li></ol></li><li class="chapter-item expanded "><a href="05.01.html"><strong aria-hidden="true">5.</strong> fuenf</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="05.02.html"><strong aria-hidden="true">5.1.</strong> eins</a></li><li class="chapter-item expanded "><a href="05.03.html" class="active"><strong aria-hidden="true">5.2.</strong> zwei</a></li><li class="chapter-item expanded "><a href="05.04.html"><strong aria-hidden="true">5.3.</strong> drei</a></li><li class="chapter-item expanded "><a href="05.05.html"><strong aria-hidden="true">5.4.</strong> vier</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">benjamin</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h2 id="31-punkte-über-farben"><a class="header" href="#31-punkte-über-farben">31 Punkte über Farben</a></h2>
+<p>\1. Ich sehe Farben
+\2. Alles, was ich sehe, sind Farben.
+\3. Alles, was ich sehen kann, sind Farben.
+\4. Ich kann nichts sehen, das nicht auch Farbe ist.
+\5. Ich kann das nicht sehen, das keine Farbe hat.
+\6. Etwas, das ich nicht sehen kann, hat keine Farbe.
+\7. Es gibt aber Dinge, die ich nicht sehen kann und von denen ich nicht weiß, ob sie Farbe haben.
+\8. Farben sind Attribute von Dingen.
+\9. Sie hängen den Dingen an, die ich anschaue, indem ich sie anschaue.
+\10. Seine Farbe ist nur ein Attribut des Dinges neben anderen.
+\11. Habe ich eines Dinges Farbe erkannt, habe ich eine Eigenschaft erkannt.
+\12. Es gibt im Gehirn gespeicherte Entsprechungen für jede gesehene Farbe, die abrufbar sind.
+\13. Durch Lichtbrechung können Farberscheinungen hervorgerufen werden, welche meßbar sind.
+\14. Vom Auge werden die Lichtstrahlen gebrochen und in oder auf einem Medium abgebildet.
+\15. Dieses Medium kann wie ein Nährboden verstanden werden, der gestreute Frequenzen verstärkt.
+\16. Unterschiedliche Frequenzen können gleichzeitig im Raum abgebildet werden.
+\17. Das Auflösungsvermögen des Mediums zur Differenzierung der Frequenzen ist begrenzt.
+\18. Das Auflösungsvermögen des Mediums muß nicht mit der tatsächlichen Informationsdichte übereinstimmen.
+\19. Es können feinere Abstufungen vom Auge gebrochen werden, als abgebildet werden können.
+\20. Es können feinere Abstufungen vom Gehirn gespeichert werden, als in einem Moment abgebildet werden können.
+\21. Es kann also auf dem Wege der Abbildung im Medium Verlusterscheinungen geben.</p>
+<p>Hypothese: Man kann diese Verlusterscheinungen sichtbar machen:
+\1. durch Ausdifferenzierung des Mediums.
+\2. als durch langsameres zeitliches Aufeinanderfolgen gesehener Farbeindrücke. Dafür muß das Auflösungsvermögen der zeitlichen Wahrnehmung verlangsamt werden, damit in der kleinsten ausgedehnten Zeiteinheit, die vom Gehirn verarbeitet wird, mehr farblich differenzierte Eindrücke aufgenommen werden können.
+\3. Eine Masse, die bewegt wird, wird umso schwerer, je schneller sie sich bewegt.
+\4. Für eine Masse, die bewegt wird, vergeht die Zeit relativ langsamer.
+\5. Die gebrochenen Lichtstrahlen bewegen sich mit konstanter Geschwindigkeit im Auge des Betrachters.
+\6. Sich schneller bewegende Lichtstrahlen mit schneller aufeinanderfolgenden Änderungen der Frequenz würden größere Massen bewegter Partikel zeitigen. 
+\7. Größere Massen der Partikel erforderten nur eine kleinere Dichte des abbildenden Mediums.
+\8. Eine kleinere Dichte des abbildenden Mediums verursacht einer kontrastreichere Abbildung. 
+\9. Einer kleineren Dichte des Mediums entspricht eine geringere Ausdifferenzierung desselben.
+\10. Sich langsamer bewegende Lichtstrahlen haben dasselbe Ergebnis wie eine stärkere Ausdifferenzierung des Mediums. 
+These: Die Geschwindigkeit der vom Auge gebrochenen Strahlen kann innerhalb desselben verlangsamt und dadurch mehr wahrgenommen werden.
+## </p>
+<p>Es führt nur mich nichts n. einmal hinein in dieses Land, wo ich die Sinfonie zuerst hörte, als Junge n. und weiß jetzt nicht, was damals fehlte. Herr Bernstein hat es sicher erklärt und vielleicht hatte ich es irgendwie aufgenommen und in mir bewahrt bis heute. Denn hier in diesem neuen Land brauchte ich nicht n. einmal 13 Jahre, um mich in der Naivität daran zu erinnern, was er damals sagte. Über einen Schleier ein buntes Kleid, den man vor das Gesicht ziehen soll zum Hören der Musik. Die *ketonet passim, <em>die unser aller Joseph trug vor seinem Fall in den geschichtsträchtigen Brunnen und die von den sonstigen Brüdern geheimgehalten wurde über welches Blut auch immer darüber floß.<sup class="footnote-reference"><a href="#1">1</a></sup> Ich habe in der ganzen Zeit nicht gewußt, wer Joseph war*</em> 1st jetzt, das frühe danach offenbart es; auch ein Geschwister. Schwer zu sagen, was uns eigentlich trennte so lange, wenn man es hier so leicht hätte unterschlagen können, wo man herkommt. Doch Sie wissen längst, <em>Frau Mahler</em>. Es gibt in dem Buch von den Kindern und ihren Eltern ein paar ungelöste Fälle, die Sie überforderten. `S ist eben doch nicht immer so einfach, sich in einen solchen Organismus hineinzudenken wie den Mutter-Sohn-Komplex. Und‘s wird Ihnen helfen, einen davon n. einmal neu aufzustellen: Schlagen Sie nach im zweiten Kapitel unter *Körperschema und Wahrnehmung. Ich* versuchte einiges zu verstehen und stoße immerw. an die Grenze, die Sie vorhergesehen haben. Wußten Sie von dieser Macht?</p>
+<p>Ich besitze eine einfach gemachte Reproduktion des Manuskripts aus den Händen... der Familie; gehörte einem W.her Ableger des Musikverlags, bei dem meine eigenen Sachen erschienen und die aufmerksam wurden, als sie jemanden zur Übersetzung der diakritischen Symbole in alten Notierungen über das Tetr'gr'n suchten. Sie waren begeistert von der Idee, nachzuweisen, daß die alten Überlieferungen, die man in Notenform gefunden hatte, in ihrer Konsequenz die moderne Musik nicht nur vorausbestimmten und als Ableitung erscheinen ließen, sondern über den Horizont hinaus sogar sphärischer Musik oder ihrer verkümmerten Form von Gebrauchsmusik eine Zukunft auszumalen ermöglichten, die nicht mehr auf den Ton allein beschränkt war, sondern die eine zeitliche und räumliche Dimension eines Kosmos von <em>Instrumenten</em> in den Hörprozess miteinbezog, die weit unter dem bewußten Hören anfing. Dieses begann <em>intrauterin,</em> n. vor der Tragödie. Ich unterschrieb damals für meine Mitarbeit einen Vertrag, welcher unbeschränkten Zugriff auf die Archive des Verlages festlegte. Das bedeutete auf Lebenszeit einen festen Platz in einem der bestausgestattetsten Magazine Europas übernehmen zu können. Die Studien begannen, das Meer war zu überqueren gewesen; ich begab mich nach F, von meiner Intuition gelenkt.<sup class="footnote-reference"><a href="#2">2</a></sup></p>
+<p>Keine Schwäche dann dort, aber meine Ahnungen: d. See unter der hellen Nacht, von der ich ihr auch nicht erzählen konnte, immer war es so, daß sich mir alles verschloß, wenn ich es aussprach. Sie würde es kennenlernen. Nordhaftes Licht, das ich nicht mehr zu erklären brauchte. Vielleicht war es schon so weit in mich zurückgetaucht, daß es längst zum Innersten Bezirk gehörte und das Tor geschlossen. Ich wußte das nur ungefähr, und nahm sie also an meiner Seite mit, als ich ins Schiff stieg. Um ihr die Geschichten dieses Landes zu zeigen, manchmal konnt ich das. So von den Farben n., weil ich sie selbst gesehen hatte, verwandte Gesichter, die sich schnell wieder entfernten, wenn ich sie ansprechen wollte. Ich durfte nicht wirklich sein dort, zwischen allem fand die Verwandlung statt. Die Menschen kamen nah an mich heran, ohne daß der Raum zwischen uns kleiner geworden wäre, nur dichter und angefüllt von ihrem Schauen. 
+Und als ich ihr das sagte, Sieh doch hinaus! Sieh hin, nicht mich an! konnte sie nicht verstehen, solange das Schiff n. unterwegs war. Erst im Hafen und dem Markt, der gerade aufgebaut wurde, in den ruhigen Augen, den natürlichen Bewegungen der Frauen, die uns Obst verkauften und den Kaffee, mit dem wir uns vor das Wasser setzten, erreichten sie die bekannten Züge. Es war nicht die Krankheit. Es war nicht das Besondere, auch nicht das Einsame oder Unerklärliches. Norden war es. Ein Zusammensein bestimmter Spiegelungen von ihren Gesichtern. Vom Regen und auch von den scharfen Konturen kühl überblauter Städte. Was könnten diese Farben wiegen, wenn ich sie zusammenwürfe? Es sind ja nichts als die Blätter zu den alltäglichen Ereignissen der angefochtenen Seelen, auf welchen sich ihr Wechsel vermerkt. Zu Gott hin, von ihm weg und widder hin, wieder zurück, wie es ihnen paßt. Aber jemand ist wachsam und verzeichnet die Bewegungen dieser Menschen, die wie Ähren <em>sich unter dem Winde neigen und entgegenreifen dem Tod in der Garbe und der Widdergeburt durch den Sämann, im Schlamm.</em><sup class="footnote-reference"><a href="#3">3</a></sup> Alles steht irgendwann geschrieben, und wie gern wüßte ich jetzt, wo. Daß man bereit würde, zu helfen und bereit, zu schlichten, wenn Hilfe und Schlichtung das Richtige zu tun sein werden, wenn sie das Gewicht sind, das diese Welt beschwert, vor allem anderen. Also, was wiegt sie, die Gutes gebietende Vernunft, was ist ihr Einsatz? Schlichter und Berater! Was ist euer Preis?</p>
+<div class="footnote-definition" id="1"><sup class="footnote-definition-label">1</sup>
+<pre><code>die er getragen hat auf dem Weg zu den Br., ein Mäntelchen, dem Reis Rahel, von der Mutter ererbt
+</code></pre>
+<div class="footnote-definition" id="2"><sup class="footnote-definition-label">2</sup>
+<pre><code>intra‘uterin meinte bevor es den Uterus v. und die Tragödie ihren Anfang nimmt
+</code></pre>
+<div class="footnote-definition" id="3"><sup class="footnote-definition-label">3</sup>
+<pre><code>Schlamm wie nie wie Nilschlamm
+</code></pre>
+<p>#buch5</p>
+</div>
+</div>
+</div>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="05.02.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next" href="05.04.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="05.02.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="05.04.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

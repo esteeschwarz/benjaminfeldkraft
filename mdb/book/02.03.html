@@ -1,0 +1,210 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>zwei - benjamin</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var html = document.querySelector('html');
+            var sidebar = null;
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="01.01.html"><strong aria-hidden="true">1.</strong> eins</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="01.01b.html"><strong aria-hidden="true">1.1.</strong> eins</a></li><li class="chapter-item expanded "><a href="01.02.html"><strong aria-hidden="true">1.2.</strong> zwei</a></li><li class="chapter-item expanded "><a href="01.03.html"><strong aria-hidden="true">1.3.</strong> drei</a></li><li class="chapter-item expanded "><a href="01.03b.html"><strong aria-hidden="true">1.4.</strong> vier</a></li><li class="chapter-item expanded "><a href="01.04.html"><strong aria-hidden="true">1.5.</strong> fuenf</a></li></ol></li><li class="chapter-item expanded "><a href="02.01.html"><strong aria-hidden="true">2.</strong> zwei</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="02.02.html"><strong aria-hidden="true">2.1.</strong> eins</a></li><li class="chapter-item expanded "><a href="02.03.html" class="active"><strong aria-hidden="true">2.2.</strong> zwei</a></li><li class="chapter-item expanded "><a href="02.04.html"><strong aria-hidden="true">2.3.</strong> drei</a></li></ol></li><li class="chapter-item expanded "><a href="03.01.html"><strong aria-hidden="true">3.</strong> drei</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="03.02.html"><strong aria-hidden="true">3.1.</strong> eins</a></li><li class="chapter-item expanded "><a href="03.03.html"><strong aria-hidden="true">3.2.</strong> zwei</a></li><li class="chapter-item expanded "><a href="03.04.html"><strong aria-hidden="true">3.3.</strong> drei</a></li><li class="chapter-item expanded "><a href="03.05.html"><strong aria-hidden="true">3.4.</strong> vier</a></li><li class="chapter-item expanded "><a href="03.06.html"><strong aria-hidden="true">3.5.</strong> fuenf</a></li></ol></li><li class="chapter-item expanded "><a href="04.01.html"><strong aria-hidden="true">4.</strong> vier</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="04.02.html"><strong aria-hidden="true">4.1.</strong> eins</a></li><li class="chapter-item expanded "><a href="04.03.html"><strong aria-hidden="true">4.2.</strong> zwei</a></li><li class="chapter-item expanded "><a href="04.04.html"><strong aria-hidden="true">4.3.</strong> drei</a></li><li class="chapter-item expanded "><a href="04.05.html"><strong aria-hidden="true">4.4.</strong> vier</a></li></ol></li><li class="chapter-item expanded "><a href="05.01.html"><strong aria-hidden="true">5.</strong> fuenf</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="05.02.html"><strong aria-hidden="true">5.1.</strong> eins</a></li><li class="chapter-item expanded "><a href="05.03.html"><strong aria-hidden="true">5.2.</strong> zwei</a></li><li class="chapter-item expanded "><a href="05.04.html"><strong aria-hidden="true">5.3.</strong> drei</a></li><li class="chapter-item expanded "><a href="05.05.html"><strong aria-hidden="true">5.4.</strong> vier</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">benjamin</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h2 id="3-Über-den-pfad-der-schwerter"><a class="header" href="#3-Über-den-pfad-der-schwerter">3. Über den Pfad der Schwerter</a></h2>
+<p>Doch sprechen wir n.ch von dem anderen Weg, den er gelernt hatte. Schon seine Vorgänger nahmen daran teil, alle Wege waren damit begonnen worden, daß sie sich auf diesen einen begaben, an dessen Ende wahrscheinlich ein Ritterschlag wartete.</p>
+<p><em>Als aber mich die Bestimmung,</em> das Buch weiterzuschreiben, erreichte, war ich schon unterwegs und jetzt, da ich wieder Zeilen (...), ist von 8 Abenden. (...) morgen in N. ankommen, (...) Zug zurück nach Berlin. Wir ist ich und du, meine Seite, die kleinen Brüder wie: <em>min jung <em>heißen seit wir uns wirklich (...) über die ersten Jahre der Zusammenkunft. (...) sind irgendwann einfach losgegangen und jetzt (...) ich sitze an diesem großen Fenster im ersten Stock des Landgasthaus M..., das sich auf den Dorfplatz von K. öffnet, eines größeren kleinen Ortes am Rande von Unterfranken, der eigentlich aber nur für seine Kirschen gekannt wird, die hier überall wachsen. Eben aß ich n. ein Pfund sauer, das am Weg zu haben war für anderthalb (Taler). Morgen (...) nach N. hinein, eine ruhige erschöpfte Nacht vor der Zugfahrt (...) zu dem Buch (...) das ich im Dom von B. kaufen konnte, das zweisprachige</em> Testament</em> von Rodin: Doch alles das (...) und nur, weil ich es später n.mal erzählte, war nicht Grund genug, es aufzuschreiben. Der lag woanders glaube ich, den Blick zur Seite, belanglos aber konzentriert, denn
+...wieviel Zeit wär nachzuholen, bis ich hier angelangt bin? Auf dem Weg das Gespringe: ich hatte Das Testament n. in der kaputten Nacht am offenen Fenster im Licht einer Laterne gelesen. Und jetzt mußte ich also suchen: bei Rilke über Rodin und in den Zeichnungen und Dichtungen von Michelangelo. Aber hier selbst? In der Oberfläche Schönheit erscheinen lassen, wie gefordert? Was meint er damit...: die Zeit, die nachgeholte und der ich mich entledigt habe? Das wär der Abfall vom Stein, der sie zu sich rief, oder? Und doch bleibt jetzt die 10. Symphonie, ein älteres uneingelöstes Testament.
+Lange (...) gebraucht, mich von der Schreibmaschine zu (...) das Erinnerte, nach Hause zurückgekehrt übertragen in jene schwächelnde Objektivität (...) bangen Schaffens. Und verzweifelt, als ich im Licht der Laterne vor dem offenen Fenster saß, bange, weil ich um die Zeitlichkeit jenes Festzuhaltenden wußte, das sich (...) verweigert. Es galt ein irgendanderes Gesetz. Und ich, (...) Tag für Tag befolgte. Sei reinlich nahm ich mir vor und Armut, Keuschheit und Gehorsam. Jener (...) wissen (...) innerhalb gegebener Grenzen. Ich bestehe nur aus dem Zusammenhalt lang ausgedehnter Zwischenstadien auf dem Weg zum ersten Ziel: den Schwertern von Santiago. Kenntnis zu erlangen über das Gebot und wo man es zu leben überhaupt in der heutigen Welt n. fordern kann:</p>
+<h2 id="manque-le-premier-de-tout-les-commandements"><a class="header" href="#manque-le-premier-de-tout-les-commandements">manque: le premier de tout les commandements:</a></h2>
+<p>Erstens: sei es wichtig, die Wahrheit einer Aussage so lange nicht anzuerkennen als auch ihre Negation nicht ausführbar war. 
+Zweitens: sei die Negation einer Aussage nur alsdann möglich, wie man mit den dieser innewohnenden Mitteln eine Funktion ableiten kann, die sie spiegelt, heißt: in ihrer Quantität verdoppelt ohne an ihr eine Qualitätsänderung vorzunehmen. Die Funktion muß der Form A=A gehorchen.
+Drittens: Läßt sich mit A=A der Fall A≠A hypothetisch konstruieren durch Ersetzen einer gegebenen Variablen, so heißt das, die Negation ist in der Aussage A enthalten. 
+Schluß des Posthumanismus: Handelt es sich bei der zur Erfüllung von Drittens ausstehenden Variable und ihrer gültigen Spiegelung um ein Paar kanonisch konjugierter Variablen, kann Erstens zu keiner Aussage verpflichtend werden im Sinne der Wahrheitskontrolle. Ihr unbestimmter Zustand <em>h</em> eröffnet die Möglichkeit einer sogenannten fuzzy logic, die chaotische Schlüsselzustände über einen - bisher n. eng begrenzten - Zeitraum aufrechterhält. Diesen auszudehnen hat sich unsere Wissenschaft zum Ziel gesetzt. Ein jüngerer Großmeister der Zunft, William E. Stockton, sah ein Zusammentreffen der vorgängigen Postulate und den Imaginationen der Zukunft für den Moment voraus, in welchem sich ergeben würde, daß der Zeitpunkt gedehnt erscheint (8min19,6sec). Wie man endlich und zu welchem Preis diese Vorstellung erreichen würde, ohne dabei einen totalen Kollaps allen geistigen Lebens seines Planeten und der <em>ihn umgebenden</em> Systeme am 21. Dezember 2012 zu verursachen, blieb ein Geheimnis der <em>congrégation.</em> 
+Und außerdem: bloodbag galt als ein altes Partikularwort, welches unter anderem jemanden bezeichnete, der als letzter übrig ist, eine Schuld zu begleichen. Was der Ire nicht wußte, als er sich 2009 für die katholische Ehe zur Verfügung stellte: his wife to be has never been catholic as she always made him think. She was not. She had a certain gnosis of what might have created her world as well as la mienne. Mais il n'y avait pas de raison de croyer a cause de SELA. Wir hatten uns trotzdem eingefunden a.a.O. zur besagten Stunde für einen kurzen Abschied der mir bis da nur durch seinen Vornamen bekannt geworden ist. Es brennen Kerzen immer dort wo so etwas passiert, ob er es wollte oder nicht; sie sagen auch er sei ein A.techniker und es wären Umstände schließlich dazu gewesen, die so außerhalb seiner ihre Ursachen hatten, daß nichts, nichts, nichts nach seinem Tod n. irgendwie weitergehen konnte wie vorher. Es sei denn, man wollte diese 8 Jahre Leben auf der Straße als seines bezeichnen, das er so am Stephanstag 2009 mit einem schon immer vorhandenen Herzfehler in der Vorhalle des Bahnhofs Witzleben für alle sichtbar beendete. Ich glaub eher, es war das stechende neue Reinigungsmittel für die Bö	den der Stadtbahn. Aber jetzt brennen die Kerzen, Hubert!</p>
+<p>#buch2</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="02.02.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next" href="02.04.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="02.02.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="02.04.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

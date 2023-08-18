@@ -1,0 +1,212 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>drei - benjamin</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var html = document.querySelector('html');
+            var sidebar = null;
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="01.01.html"><strong aria-hidden="true">1.</strong> eins</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="01.01b.html"><strong aria-hidden="true">1.1.</strong> eins</a></li><li class="chapter-item expanded "><a href="01.02.html"><strong aria-hidden="true">1.2.</strong> zwei</a></li><li class="chapter-item expanded "><a href="01.03.html"><strong aria-hidden="true">1.3.</strong> drei</a></li><li class="chapter-item expanded "><a href="01.03b.html"><strong aria-hidden="true">1.4.</strong> vier</a></li><li class="chapter-item expanded "><a href="01.04.html"><strong aria-hidden="true">1.5.</strong> fuenf</a></li></ol></li><li class="chapter-item expanded "><a href="02.01.html"><strong aria-hidden="true">2.</strong> zwei</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="02.02.html"><strong aria-hidden="true">2.1.</strong> eins</a></li><li class="chapter-item expanded "><a href="02.03.html"><strong aria-hidden="true">2.2.</strong> zwei</a></li><li class="chapter-item expanded "><a href="02.04.html" class="active"><strong aria-hidden="true">2.3.</strong> drei</a></li></ol></li><li class="chapter-item expanded "><a href="03.01.html"><strong aria-hidden="true">3.</strong> drei</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="03.02.html"><strong aria-hidden="true">3.1.</strong> eins</a></li><li class="chapter-item expanded "><a href="03.03.html"><strong aria-hidden="true">3.2.</strong> zwei</a></li><li class="chapter-item expanded "><a href="03.04.html"><strong aria-hidden="true">3.3.</strong> drei</a></li><li class="chapter-item expanded "><a href="03.05.html"><strong aria-hidden="true">3.4.</strong> vier</a></li><li class="chapter-item expanded "><a href="03.06.html"><strong aria-hidden="true">3.5.</strong> fuenf</a></li></ol></li><li class="chapter-item expanded "><a href="04.01.html"><strong aria-hidden="true">4.</strong> vier</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="04.02.html"><strong aria-hidden="true">4.1.</strong> eins</a></li><li class="chapter-item expanded "><a href="04.03.html"><strong aria-hidden="true">4.2.</strong> zwei</a></li><li class="chapter-item expanded "><a href="04.04.html"><strong aria-hidden="true">4.3.</strong> drei</a></li><li class="chapter-item expanded "><a href="04.05.html"><strong aria-hidden="true">4.4.</strong> vier</a></li></ol></li><li class="chapter-item expanded "><a href="05.01.html"><strong aria-hidden="true">5.</strong> fuenf</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="05.02.html"><strong aria-hidden="true">5.1.</strong> eins</a></li><li class="chapter-item expanded "><a href="05.03.html"><strong aria-hidden="true">5.2.</strong> zwei</a></li><li class="chapter-item expanded "><a href="05.04.html"><strong aria-hidden="true">5.3.</strong> drei</a></li><li class="chapter-item expanded "><a href="05.05.html"><strong aria-hidden="true">5.4.</strong> vier</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">benjamin</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h2 id="4-reglement"><a class="header" href="#4-reglement">4. Reglement</a></h2>
+<p>Es sollte ein paar Regeln geben, nach denen wir uns bei der Erschaffung dieser Homunculi richten müssen. First: there will be no sun before the 8 minutes break and the 19,6 seconds have passed. 
+2nd: There is no need to gasp as long as you can see clearly. Last: When the curtain falls the possibility to change what you have seen is no longer given. You have to have adapted your mind to the scene before it reveals the hidden, then naked actors.
+Ein Regelwerk, so einfach und gut zu bestehen wie ein kleines Einmaleins 2. Klasse, wenn man zu einer Schicht gehörte, deren Lebensinhalt über vegetabile Zustandserlebnisse hinausging. Das setze ich bei dem Leser der Schriften voraus.<sup class="footnote-reference"><a href="#1">1</a></sup>
+Aber es geht w. einmal um mehr. Auch diese Schicht Lebenszuwachs, die mir zuteil geworden war, nachdem ich unter umstürzlerischen Vorzeichen die Systeme wechselte was niemand, der es nicht auch so erlebt hat anders als obsolet bezeichnen würde, dieser richtiggehende Nährboden für Unentschiedenheit, für Überflüssigsein für in den Grundfesten erschütterte Wertsysteme; das war Mischerde. Das war Dunkelblut. Das war Keuschheitsgebot Tugendgelübde und Weihrauchatem in einem Zusammenwachs mit allem was gojim nur sein konnte! Schrein Sie nicht so!! Es geht ja um mehr... ich möchte es erhellen.
+## 
+Jene sei angenommen vor dem Angesicht des Höchsten zum Glauben, den ich im folgenden natürlich näher erläutere. Die anerkanntermaßen strukturlose Form unserer Gesellschaft ruft nach einem Ausdruck ehestens in den jegliche unnatürliche Struktur negierenden Schriften des m.E. trotzdem zu Unrecht als haereticus materialis verurteilten Magister <em>v. Weinen</em>. In der Sammlung <em>Über das freudlose Dasein unseres Erlösers J.C.</em> hat er das unbekannte Dogma der... k. so weit verworfen als es in den ausgestellten Leiden unseres hominem salvator die positive Anteilnahme daran dem gläubigen Menschen insofern vorschrieb, daß jener seinen Weg Freien Willens beschritten hätte und gemäß seiner Vorraussicht, damit 1 Heilsplan zu erfüllen. Träte ich jetzt als ideeller Nutznießer dieses fr. Daseins auf und gewänne daran einen Vorteil für meine Seele, daß jener (...) Tod, der qualvoller kaum erschienen ist, so würde ich damit untilgbare Schuld auf mich nehmen und anstatt mich wie vom Dogma verlangt sündenfrei zu fühlen durch jenen T. nur immer beschweren. Ließ ich jedoch meiner Regung freien Lauf, die mich dazu ermutigt, ein fürchtiges Leben zu führen nach den im guten Menschen angelegten Gesetzen (vom Sinai), so bleibe ich frei dieser Schuld. Ich bin zwar n. immer sch. im Sinne der Erbsünde und habe keinen Anteil vergangener Paradiese; donc. In der Welt der Menschen, die ja alle dieses Schicksal teilen und keiner dem anderen überhoben ist, bin ich schuldfrei im ethischem Belange. Da ich nach Ihrem Denken des irdischen Paradieses teilhaftig und dieser Auffassung bin, solange ich kein schlechtes Gewissen, habich für mein Seelenheil gesorgt. (Schlechtes G. würde sich einstellen, wenn ich mich jetzt kennzeichnen lassen würde aus Gründen, die nicht re Natur sind. Die Erhaltung meiner Existenz wäre so ein teilhabender niederer Beweggrund.) Erkennen Sie deshalb an, was sie hier dargelegt finden und gestatten, daß ich mich für die Aufrechterhaltung des seligen Zustandes höchstens n. auf den <em>casus clinici</em> beziehe, der mir (eine mögliche Zeichnung) im Lager der Toten erlaubt. Damit steht die K. bis zu diesem Punkt außer Frage und es besteht kein Widerspruch zu der von Ihnen für eine weitere Vermittlung durch ein Taufzeugnis bewiesenen.&quot;
+## 
+,Und Sie haben tatsächlich Seamus zu seinem Weggang geraten?‘ fragten die Augen des ungläubigen Katecheten. Als ich jetzt laut darauf antworten wollte, verschwand mir meine Stimme in dem Wirr der Klänge von Bruckners 4. Symphonie, die ich gerade hörte, als das Buch sich aufschlug. Aber ich fand einen Eingang, wie immer über die Musik. Also sprach ich, auch für mich: Er muß vorangehen, also weggehen, damit ich ihm folgen kann. Meistens ist das wie sich verlieren, also sich selbst dabei. Wenn Musik in Tees endete, hieß das dem Beschaffer solcher M. innezuhalten und den letzten T. darauf zu befragen, ob es wohl an der Bete gelegen haben mochte, auf deren Risiko man sich...</p>
+<div class="footnote-definition" id="1"><sup class="footnote-definition-label">1</sup>
+<pre><code>erster Seitenhieb; um sich von alten Träumen zu erholen ist durchaus angebracht, aufgebraucht.
+</code></pre>
+<p>#buch2</p>
+</div>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="02.03.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next" href="03.01.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="02.03.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="03.01.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

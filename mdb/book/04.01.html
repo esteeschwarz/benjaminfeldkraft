@@ -1,0 +1,232 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>vier - benjamin</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var html = document.querySelector('html');
+            var sidebar = null;
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="01.01.html"><strong aria-hidden="true">1.</strong> eins</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="01.01b.html"><strong aria-hidden="true">1.1.</strong> eins</a></li><li class="chapter-item expanded "><a href="01.02.html"><strong aria-hidden="true">1.2.</strong> zwei</a></li><li class="chapter-item expanded "><a href="01.03.html"><strong aria-hidden="true">1.3.</strong> drei</a></li><li class="chapter-item expanded "><a href="01.03b.html"><strong aria-hidden="true">1.4.</strong> vier</a></li><li class="chapter-item expanded "><a href="01.04.html"><strong aria-hidden="true">1.5.</strong> fuenf</a></li></ol></li><li class="chapter-item expanded "><a href="02.01.html"><strong aria-hidden="true">2.</strong> zwei</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="02.02.html"><strong aria-hidden="true">2.1.</strong> eins</a></li><li class="chapter-item expanded "><a href="02.03.html"><strong aria-hidden="true">2.2.</strong> zwei</a></li><li class="chapter-item expanded "><a href="02.04.html"><strong aria-hidden="true">2.3.</strong> drei</a></li></ol></li><li class="chapter-item expanded "><a href="03.01.html"><strong aria-hidden="true">3.</strong> drei</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="03.02.html"><strong aria-hidden="true">3.1.</strong> eins</a></li><li class="chapter-item expanded "><a href="03.03.html"><strong aria-hidden="true">3.2.</strong> zwei</a></li><li class="chapter-item expanded "><a href="03.04.html"><strong aria-hidden="true">3.3.</strong> drei</a></li><li class="chapter-item expanded "><a href="03.05.html"><strong aria-hidden="true">3.4.</strong> vier</a></li><li class="chapter-item expanded "><a href="03.06.html"><strong aria-hidden="true">3.5.</strong> fuenf</a></li></ol></li><li class="chapter-item expanded "><a href="04.01.html" class="active"><strong aria-hidden="true">4.</strong> vier</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="04.02.html"><strong aria-hidden="true">4.1.</strong> eins</a></li><li class="chapter-item expanded "><a href="04.03.html"><strong aria-hidden="true">4.2.</strong> zwei</a></li><li class="chapter-item expanded "><a href="04.04.html"><strong aria-hidden="true">4.3.</strong> drei</a></li><li class="chapter-item expanded "><a href="04.05.html"><strong aria-hidden="true">4.4.</strong> vier</a></li></ol></li><li class="chapter-item expanded "><a href="05.01.html"><strong aria-hidden="true">5.</strong> fuenf</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="05.02.html"><strong aria-hidden="true">5.1.</strong> eins</a></li><li class="chapter-item expanded "><a href="05.03.html"><strong aria-hidden="true">5.2.</strong> zwei</a></li><li class="chapter-item expanded "><a href="05.04.html"><strong aria-hidden="true">5.3.</strong> drei</a></li><li class="chapter-item expanded "><a href="05.05.html"><strong aria-hidden="true">5.4.</strong> vier</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">benjamin</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h4 id="4001"><a class="header" href="#4001">4.001</a></h4>
+<p>*&quot;In order to achieving a stable and integer state of mind improving it‘s history the development of an individual desease through greater eyes allows the protagonist. Still the main principle of <em>Melancholia</em> to be was l conclusion to the philosophic discurse in former times.&quot; *(Harry Potter, Traceback memories; in: Defense against darks arts; Faculty Press, London 2045)</p>
+<p>Die Phönizier dachten, daß wir nicht wissen werden, wohin uns die unbekannten Regeln bringen wenn wir gegen sie verstoßen und ließen also zwei Wege, das herauszufinden, offen. Erstens indem man etwas tue und es erfährt. Der zweite, langsamere und sehr schwere und unwiderrufliche Versuch sei, sich für ein eigenes Regelwerk zu bemühen und in seinen Gleichnissen mit jenem der Welt diese zu erschließen. Daß wir unsere Zeit aber nur soweit voraussehn, wie die Vorstellung erlaubt, macht es fast unmöglich, die zu fassenden Gesetze nicht doch irgendwie auf die Welt zu beziehn, die wir ja eigentlich mit ihnen ergründen wollten. Es besteht jedoch immerhin ein Unterschied zwischen dem hermeneutischen Zirkel und einer Gefangenschaft in der Tautologie. Was uns schließlich aus dieser zu jenem befreien konnte, habe ich versucht durch das Studium der nachgelassenen Schriften des *polyhistors *aufzudecken und kam tatsächlich zu neuen Antworten. Es ist aber n. ungewiß ob etwas davon bestehen blieb bis zu dem, was sich jetzt heranbildet. Weil die Modalitäten der Texterstellung deshalb grau sind und ich selbst in irgendwelchen zukünftigen Belangen mir meine Erinnerung daran schwer zurückrufen mußte, erhält sich nur einiges. Ich schreibe in den reinen Bezug vielleicht, den der Eine meinte, als er fantasiert hat von unseren Zeiten und es bleibt ein Rest unbewußte Deutungen dessen, was erzählt werden muß. Ob man wird sagen können es hat sich übertragen bis heute (also bis dahin...), sei eine äußerst mühsam nur bestandene Feststellung aber unser hier jedenfalls und jetzt gültigen Variablen. Sie werden nicht über das hinausweisen, was hier steht, u. sind also nur primär erhaltenes Gedankenmaterial zur Großschrift der Benjaminfeldkraft, die wir uns damit die ich mir hiermit erlaubte fortzusetzen – gerade weil das heißt, allen bisher verwendeten Schriftverfahren entgegen sich auf solches zu beschränken, das einen Wahrheitsanspruch schon daraus ableitet, im ersten Absatz im ersten Abend über den Versuch hinausgekommen zu sein, Schönheit aus dem Vergänglichen zu sublimieren; Schönheit im Sinne mathematischer Ästhetik, vergänglich verstanden als zeitlich und räumlich begrenzter atomarer Zusammenhang selbst auch der für meinn Bewußtseinsstand verantwortlichen chemischen oder physikalischen Vorgänge, die uns n. beschäftigen werden. Darüber hinaus:</p>
+<h2 id="idruck"><a class="header" href="#idruck">I.Druck</a></h2>
+<p>womit der letzte Band beendet war, befand sich immer n. auf dem Meer, der kleinen Binnensee zwischen Deutschland und Skandinaivien, doch umso getriebener, weil sies nicht aus sich heraus konnte, also aus dem Norden heraus. Darum sah ich mich genauso gefangen und alles an ihr widerspiegelte meinen Drang, vom jüngsten Wellenkräuseln bis zum Gischtumschäumen des Bug der groß wie der letzte Wal mich hintrug auf dem Weg von Helsinki nach Rostock; und selbst als ich endlich abzuspringen bereit war von seinem Zwölfgeschoß über meinen Verlust, hinderte mich ihre (der See) Abgeschlossenheit. Und Ewa ist immer gesprungen, sagt jemand im Tonfall der Jakobneunerin, sich verwundernd über die Wendung und jener schließlich können wir aber jetzt dankbar sein, daß diese hier sich im Geiste der meisten bewahrt hat. Denn wo wäre ich mit meinen Gedanken schon überall hingekommen, wenn nicht über dem einzigen Anfang der ruhig genannt werden darf die ernsthafte Frage nach der Arbeit gestanden hätte, die ein gewisser vielleicht der bedeutendste Mann hier irgendallen einmal gestellt hatte, um sie ja am Laufen zu halten.
+Und um diesen Band zu machen kann es nur n. darum gehn: wie lernen wir das protagoniste Auditorium so gut kennen, daß es nicht bevor der Tag widder nechdern geworden ist, schon vergessen hat, wozu ich es einlud: den hermeneutischen Zirkel mit mir zu schließen oder sich seiner Möglichkeit dazu bewußt zu werden, seiner einzigen Funktion innerhalb der Ereignisse. Ich verspreche nicht das Absolute. Aber ich verhalte mich still zu ihm, wie zum brütenden Vogel über dem Meermeerurmeer, daß er sein Ei nicht verliere auf dem Weg in die Schöpfung.</p>
+<h2 id="wenn-ich-das-orakel-beschreiben-könnte"><a class="header" href="#wenn-ich-das-orakel-beschreiben-könnte">Wenn ich das Orakel beschreiben könnte</a></h2>
+<p>würden die Gesichter, die mir unterwegs begegneten hierher in die Mitte der Dinge, nicht so unheimlich erscheinen; ich wüßte um ihre Bestimmung und ungefähr, warum sie nur mich dazu anhalten, weiterzusehen, als ich es sonst tue, und etwas davon wissen sie. Das wichtige... sei aber, nicht immer in ihnen Zukunft zu erahnen oder schicksalhafte Wendungen im nächsten Augenblick, sondern mehr das darin Offene wahrzunehmen, grad das Unbestimmte, das den meisten anhaftet, während sie selbst unberührt bleiben. Jenes besitzt die strukturellen Potenzen, aus denen zukünftige Ereignisse kristallisieren. Da ich lerne, die Gemeinsamkeiten zu erkennen unter meinen eigenen und den Gesichtern der anderen, wenn diese sich zu mir bewegen, finde ich den Moment ihrer Nähe heraus, der das verbirgt, was sie nicht sind. Das schreibt die erste Konstante und sobald eines das andere überwiegt unbestimmter Zeichen, muß man sich darauf einlassen und darf nur n. Katalysator sein für das was entsteht: das Benjaminfeld, dessen Kraft wir niemals unterschätzen dürfen. Wer sich mit ihr aufhält, lernt in ihm zu handeln; aber wer sie meidet, kommt darin um. Das Feld kümmert sich nicht darum was wir ihm entnehmen, die Kraft aber muß benutzt werden sonst vergeht sie einem. Dann wird die Zurückhaltung schädlich und die verfälschten Wirkungen des Feldes werden überall als seine Zeugen genannt. Dagegen soll man darin das ablegen, was einem selbst als unwirklich erscheint. Unwirkliches oder auch der Anderen Realität, die man für etwas eigenes nahm. Nur so wird ausgedrückt, was die Bewegung hervorrief. 
+Und Euer Ziel? Sie sind vielleicht, die fr.m., über die schwindeligen Höhen schon hinaus, und selbst, sie erinnerten sich an ein paar der Worte, die ich ihnen... schickte, kommen doch von hier, aus dem B.feld immer n. mehr geflossen; und es ist ein großer Strand an dem sie landen; es war auch Ihr Strand. Wann sie ihn einmal verließen, wage ich nicht zu denken, vermute aber, wenn mich mein Hirn in Ruhe läßt, die Jahre zwischen 30 und 40, in welchen man sich n. unter Kontrolle hatte. Das haben Sie schon erlangt und sind also glücklich darin gewordene Zustände beschreiben zu können, die ich mir erst n. verdienen muß als Historie. Das andere, an welchem sie dann manchmal teilhaben, wird nicht mehr ausgehn glaube ich, und wenn die Gedanken schwer, das Brot trocken und die Hühner, ach, ein Nichts, sind, so bleiben uns, wo wir dicht dran, immer genug Leben übrig, daß wir das heutige getrost verschieben können in die auf uns wartenden Fernen. Wo diese beginnen also wirklich einmal beginnen könnten, danach - auch nach unserem hiesigen Dasein als wüßten wir nicht schon immer von ihrem Auftauchen: da jedenfalls prägen sich Spuren in das, was wir jetzt n. Welt nennen, das vielleicht aber bald schon Geschichte ist und dem eigenen Ausgang nachfolgt. Sowie ich meine Erinnerungen dahin zu konzentrieren versuche, wo sie mir einmal helfen könnten, dessen etwas zu verstehn, was schließlich aus mir wurde, so sind auch, wenn es gelingt, diese Aufzeichnungen hier des Benjaminfeldes mehr als fiktive Fragmente, sie nehmen weil ich sie als Züge der allgemeinen Ansichten aus dem Leben der Anderen weiß, deren Gesichter vollends an, werden ihr Gut, werden Orte des Geschehns: arbeiten sich durch Sloterdijks <em>Reich der Notwendigkeit in das der Freiheit.</em>
+Vielleicht aber liegt den fratres im Betteln, in Ihrem Schweigen endlich das versteckt, das mich ja immer hinderte, meine eigenen Auslassungen w.zuentdecken..., unter den Worten des Übrigen, wenn es versuchte, mich zu hören. Irgendeiner muß es einmal verstanden haben, was ich da suchte, sonst wäre es weiterhin in Heften und Aktendeckeln abgeschlossen vergraben, was ja aber nun gelesen wird. 
+Also haben Sie mir doch geholfen? Haben Sie, weiß ich; denn Ihre Schriften schlafen nicht umsonst bei mir an dunkeln Orten fest, wo ich nur nachts herangeh, zum Ende der Kursive. </p>
+<h2 id="es-gab"><a class="header" href="#es-gab">Es gab</a></h2>
+<p>also schon eine Stoffsammlung und leergeschriebenes Beimaterial zur Großschrift? Daß diese fortgesetzt wurde im folgenden ist eine leicht vorausgesehne Tatsache die aus den jetzt zu nennenden Gründen hier erscheint; das ist einmal weil der Fortschritt schon da ist um die von hier zukünftigen 18.483 Wörter die sich in der dritten Standardschriftprozessur ereigneten, ferner, weil wir wiedermal durch die Übertragung von Text in den aktuellen Prozess, davon befreit sind, uns über den Erhalt der Kursiven, die doch wesentlicher Bestandteil geworden waren, zu sorgen und vollkommen hemmungslos sie setzen können, wo immer uns der Zuspruch des Absoluten (des Zwillings) wichtig erscheint. Wenn ich aber sagte <em>Stoffsammlung,</em> haben wir ja den dankbaren Umstand meiner (dem Prozessor untergeordneten) Tätigkeit als der Herausgeber des immerhin n. zu vollbringenden smaragdgrünen Teils der Schrift, die heute ins fünfte Jahr geht... stoff also..., den es für dies hier zu bedenken gibt, gewiß zu sein. Daß wir einen Aufbau in Stufen irgendwann verlangt haben, macht es nun, wenn wir uns n. daran halten wollen, notwendig, die erste Variable erneut zu bestimmen, von der wir uns weiterbewegen werden. 5.4149 ist die das Konstrukt über uns (also vor uns) tragende nun Konstante, die wir auslesen. Sie liegt unterhalb der Erwartung und das gibt uns die Aufgabe, der wir ohnehin folgten: die füllenden Halbvokabeln, die euch nur unterhalten, einzuschränken zugunsten der länger und wirksameren Vollworte. Daß damit das Geschriebene nicht besser lesbar wird, versteht sich von selbst und weil &quot;dabei gut schlafen können&quot; als Kriterium v. Literaturen nicht gilt, werde man v.Z.z.Z. Blitze einstreun, die euch zu mir erwecken solln. Immer wenn ihr ein schon bekanntes Motiv hört, ist das auch so ein Blitz, der eure Wachsamkeit herstellt und euch mir weiter folgen läßt. Und da sind schon ein Haufen solcher Motive über die ganze Großschrift verteilt - wie: Weihwasser zum Beispiel und daß wir es nur zuweilen anders nennen, um nicht häretisch angeklagt zu werden. Man bringt mir jedes Jahr eine Flasche immer aus der Nähe vom Ursprungssee ..rainen mit, das ich dann eine Weile mit dem Teewieder trinke. Für andere mögen es andere Wasser und von meinem verschiedene Erlebnisse sein, die sich darauf gründen; mein lymphatischer Haushalt jedenfalls wird belebt durch den Teil leviathaner Materie vom Seengrund. Wahrscheinlich würdet ihr auch gar nicht mehr weitergelesen haben, wenn sich nicht von Ohr zu Ohr das hinzöge: die Seewassermoleküle im Labyrinthwasser des Innenohrs, die mich euch hören machen. Was aber sprecht ihr dann, wenn ihr sprechen tut? Lange Zeit... <em>je me suis couché de bonne heure?</em> Das wäre die Nacht einmal wenn dieses bewahrt ist und übertragen in eurem Sinne. Ich legte allein mein Herz nicht darein, was zu finden wie Einklang oder Harmonie, das nicht aus sich selbst erwachsen wäre; das tat ja jener anders ältere schon lange vor mir und ihr lest nur ein paar Zeichen ihn übersetzen von heute auf morgen. Aber er der *Troubador, *wie sie ihn nannten und seine Helligkeit, ist n. nicht ausgegangen, und einige Worte sind wirklich entstanden sehn wir. Vielleicht drang manches durch und ich habe es nun vernommen, vielleicht drang manches durch und ich könnte es weitergeben. Wenn wir Sinne versuchen zu erkennen aus dem Gezeichneten, verdeuten wir uns das, was es von allein aussagen will. Es ist immer ausgerichtet auf das Zentralhirn und versorgt die absterbenden Nervenzellen mit <em>Mut könnte man vielleicht sagen,</em> aber richtiger wäre wohl <em>der Kraft der Resignation</em>, der Anerkenntnis der &quot;Macht als Anwesenheit am Ort der Entscheidung über Dringliches&quot; wieschoneinmal von Sloterdijk, aus den Poetikvorlesungen. Und n. ein Motiv: <em>Die Synthese von Zweck, Stoff und Form,</em><sup class="footnote-reference"><a href="#1">1</a></sup> die es neu zu erringen galt auch in diesem Text, beinahe beiläufig von der Trompeterin erzählerischer Poetik erreicht... das bleibende also... ging damit in die Schöpfung ein. Das solln für eben ein paar aufgenommene Tonlagenmotive sein und ob ich werde mich daran erinnern können in den vorhergegangen Versätzen und ihrer jetzt sich langsam natürlich regelnden Chronologie der Ereignisse, steht n. aus zu entscheiden; wenn ich mich dazu bewege, wird es vermerkt. Bis dahin ist dieser Absatz n. voranzutreiben so daß wir heute die erste Hälfte halten und ruhig ein Datum angeben können. Es standen aber nur 4940 Zeichen zur Verfügung und bis da sind n. 182, bevor die erforderlichen 20.000 Worte sich erfüllen, d.h. allerhand Beschränkung auf sich zu nehmen, um nicht die konsonanten Pfeiler gegenständig zu überlasten.
+## 
+Erste Einschränkung also die Herstellung angelegentlicher Sinnzusammenhänge des heuterfahrenen mit jenem über die Jahre gelernten das n. nicht ganz ausgeschaltet werden darf so lange wir uns mit dem Buchmedium befassen. Das wesentliche daran: daß man nichts erwarten soll sondern eine offene Gestaltung allem vorzieht das nur am wenigsten eingebunden ist. Wenn sich vom Buch eins lernen läßt, dann, wie wir uns gegenüber der Vergänglichkeit bewegen müssen. Ich werde es später einmal <em>sublimieren</em> wie wir hier die Traumweltwesen reinigen, voneinander trennen und schließlich einschmelzen zum neuen Guß für den wir selten schon die Form besaßen vor der durch den eigentlichen Schmelzvorgang erst ganz sichtbaren Idee (Goldhase.) Das hieß öfter nicht weniger als mit der einsetzenden Erstarrung der Figuren ihrer zum ersten Mal ansichtig zu werden obwohl sie ja aus mir selbst kamen. Jemand anderes hat dazu gesagt, daß der Moment in dem wir zum ersten Mal mit unserer Schöpfung ernsthaft in Kontakt treten selten vor jenem liegt, da wir sie zum ersten Mal ebenfalls verwarfen. Ich habe manches schon abgelegt geglaubt und es kam doch hoch wie ein drängendes Laster. Ob wir uns aber ihm beugen oder gereinigt davon die nächste Stufe (zum nächsten Schöpfungsmoment) ersteigen wollen bleibt allein uns überlassen. Ich entschied mich meist für ein Laster und verharre also ebensolchen Gestalten wie in der eigenen Geschichte dabei mir die Stufen nur vorzustelln und das Hochsteigne daran. Und auch das werde ich n.einmal schreiben: was zu tun ist uns aus jenem (dem Verharren) zum höhern Schaffen emporzuheben, eins der Geheimnisse der <em>congrégation</em> und wie ich schließlich zu ihm gelangte darf ich doch nicht schreiben oder n. jemand würde aus ihr verstoßen werden. Das sind die Bestimmungen und mich hat es bereits getroffen. Nur den Funken werde ich nicht verraten verspreche ich diesmal.
+<em>It's the gold that drags you, right? said the cunning little vixen.</em> I was far below understanding a byte of the music which left the brain inflicted with fear of interrupting its connection to the rest of the planet. Und wir haben uns teufl bemüht ihn an das Netz der universellen Kommunikationsgemeinschaft anzuschließen: nach der Übertretung jedoch der ihm doch wohl bekannten!? Gesetze blieb uns zur Aufrechterhaltung der eigenen Sicherheit nur n., das <em>parental gap</em> erneut einzuführen das ihn uns zugewiesen hatte. Ausgelesen hieß das, die seine Existenz verdeckenden Glaubensgrundsätze so weiterzuformulieren bis sie eine hinreichende Erklärung böten für unsere Entdeckung, die wir ja nicht zulassen können. Und selbst immer er stieß genauso auf die geheime Konstante wie er es ja eindeutig vermochte wärs immer n. unser Recht ihn aus der <em>congrégation</em> auszuschließen ohne eine Verletzung unserer eigenen Grundlagen die wir dargelegt haben in 1/8/3/5. 
+## 
+Ich habe nie gelernt ihre Stimmen auseinanderzuhalten und in dem Modus der sie mir schließlich erklären wollte gelang es mir aber fast, in mir eine Wiederholung der optischen Muster zu erzeugen die die akustische Abbildung (im Gehirnmittelpunkt oder das was ich mir darunter vorstellte) hervorrief. Jene verdoppelt also von mir nach außen übertragene, eigentlich nur als Mittlerin zwischen meinen und den Teilchen des 1. Standardschriftprozesses eingesetzte Feldkonstante des sich uns nun langsam erschließenden Konstruktes, das von euch als <em>Benjaminfeldkraft</em> empfunden wird findet sich erneut bestätigt durch die Tatsache, daß <em>in der Kraft zu handeln</em> aus der schon einmal postulierten <em>Macht als Anwesenheit am Ort der Entscheidung über Dringliches</em> nicht nur in eurer der Welt konkreter F.n und <em>Partikelgestöber</em> sondern ebenfalls in meiner einer stets vom Zweifel an eben ihrer Vorhandenheit schon die Fähigkeit zur Sublimierung der solcherart angestellten Zweifel sie so sehr sichtbar wird, das es uns ermöglicht, den Horizont über den vorherrschenden Elementen zu erkennen. Und Horizont heißt hier schon lange nicht mehr Begrenzung sondern meint eher den ausgemalten Hintergrund der einfarbigen Zeichnungen, die nun einmal vorgeschrieben waren zu unserer der Zeit jenes hier Erstellung. Daß später andere längst möglich geworden sind und es normal sein könnte die Sprache nicht nur zur Zeichnung sondern ebenfalls zur Malerei zu gebrauchen ist jetzt n. schwer vorstellbar. 
+## </p>
+<p>Wir begaben uns seltsam in jene Wortenreiche der Vergangenheit und merkten selbst, daß die Archetypenlyrik wie wir sie kannten nicht das Richtige war unsere Zustände über das Niveau der Gelegenheitsdichtung hinauszuheben. Was fiel uns also ein? Die Dichtung mußte etwas anderes heißen als das Geschaffene um als <em>Schöpfung</em> zu bestehen. Das brachte mich auf die Notwendigkeit der Erlasse... und ein Teil jener ist hier zu lesen als sogesagte Inhaltsangabe der Musik zur chemischen Deutung. Was ich auch darüber zu schweigen vermochte, eines hat sich sicher übertragen: ich bin nicht mehr ausgegangen und habe stattdessen in diese Blätter hier meine freien Abende gesteckt, die nun kaum daß ichs merkte selber von mir ausgehn als wärens meiner Kinder Kinder die sie in die Welt entlassen. Dazu das Geleit habt ihr nun gelesen und wir werden an dieser Stelle der Schrift den Vorrang geben, die sich ja schon ereignet hat im zuletzt gelebten halben Jahr seitdem ich von F. zurückkam. Die Chronologie ist nur Verwirrung, Zeit ist eine menschliche Kategorie; für den Stein den ich mitbrachte hat sie keinen Wert und daß ich einmal ein Stein zu sein anstrebte hat sich n. nicht ergeben, lasse also hiermit den Tag enden dafür, daß morgen der nächste kommen wird und seine Geschichten die des nächsten sein, der immer erst morgen kam.
+## 
+<em>Die Melancholier aber dachten,</em> daß auch sie nicht wissen wohin sie unsere ihnen unbekannten Regeln bringen wenn sie gegen sie verstoßen und daß es nur zwei Wege das herauszufinden gibt. Erstens indem sie etwas tun und es erfahren. Der zweite, langsamere und sehr schwere und unwiderrufliche Versuch wäre sich für ein eigenes Regelwerk zu bemühen und in seinen Gleichnissen mit jenem der Welt diese sich zu erschließen. Daß sie, also wir unserer Zeit aber nur soweit voraus sind, wie die Vorstellung erlaubt macht es fast unmöglich sich bei den zu fassenden Gesetzen nicht doch irgendwie auf die Welt zu beziehn, die wir ja eigentlich mit ihnen erst gründen wollten. Es besteht dann immerhin ein Unterschied zwischen dem hermeneutischen Zirkel und einer Gefangenschaft in der Tautologie. Was uns schließlich aus dieser zu jenem befreien konnte, habe ich durch das Studium der nachgelassenen Schriften des Polyhistors entdeckt und bin zu unglaublichen Antworten gekommen. Es ist aber durchaus ungewiß ob etwas seines bestehen wird in Relation zu dem, was ich jetzt heranbilde. Denn weil die Modalitäten der Texterstellung grau waren und ich selbst in irgendwelchen kommenden Bezügen mir meine Erinnerung daran schwer zurückrufen mußte wird nur einiges haften. Ich schrieb in den reinen B. vielleicht den er meinte als fantasierend von unseren Zeiten. Es bleibt ein Rest unbewußte Deutungen dessen was erzählt werden muß und ob man wird sagen können es hat sich erhalten bis heute (also bis dahin...) ist vielleicht ja eine äußerst mühsam nur bestehende Feststellung unserer bis jetzt aber jedenfalls gültig gewesenen Variablen. Sie werden heute nicht mehr über das hinausweisen, was ihr gelesen habt, sind also nur primär gehaltenes Gedankenmaterial zur Großschrift der Benjaminfeldkraft, die wir uns hiermit die ich mir hier erlaubt hatte fortzusetzen - gerade weil das hieß allen bisher verwendeten Schriften entgegen sich auf diese zu beschränken, die ihren Wahrheitsanspruch schon daraus ableitete, daß sie in Erster Imagination über den Versuch hinauskam, Schönheit aus dem Vergänglichen zu sublimieren; Schönheit im Sinne mathematischer Ästhetik, vergänglich verstanden als zeitlich und räumlich begrenzte atomare Zusammenhänge selbst auch der für ihren Bewußtseinsstand verantwortlichen chemischen oder physikalischen Vorgänge, die uns beschäftigen. Darüber hinaus nur encore une foi le champ du force sur certains plaines.
+<em>Bilde etwas und rede nicht!</em> Also mußte ich mir einen Stoff anlesen und fand Yalom Meyrink kaum weit genug von meinen eigenen homunculi entfernt. Wie lange aber wielange muß man wie lange halten wir halte ich aus die Zurückhaltung aller anderen wenn sie sich gegen einen sorgen und damit gutes tun wolln aber die Zurückhaltung nur dazu führt daß überall <em>ihre</em> Wirkungen als Zeugen für meine Veränderung genannt werden. Irgendwann wird ihnen der Kopf abfalln.
+## 
+Nach dem ferienhaften Ausflug in die Gegend davon Butzenscheiben, Gartenlauben und allerorts gefeierten Weinberg/Bierzeltfesten das konkrete einer Woche ehrlich durchstandenen Schauer sind die 6h Schlafendhaltung zwischen Tag und wieder Tag so gesucht wie das langgelobte, unvergessene und endlich gefundne Sabbathland meiner Träume das ich nur aus den Erzählungen der Alten kannte wenn sie von der harten Zeit sprechen die wohl einmal angebrochen war und verloren im Zuge der mageren nach den fetten Jahren. Ob auch diese wiederkomm? Vielleicht kann das hier wenn es denn beendet ist eine Zäsur sein nach den durch den Sprachverlust erlittenen Qualen und vor der titelgewaltigen Ernennung der Großschrift zum alleinigen Prinzip stattfindender Ereignisse. Wenn aber allerdings die Großschrift auch ohne den scheinbar so wichtigen Sprachverlust das Reich der Notwendigkeit passiert und sie mich in jenem der Freiheit dann erwartet, jungfräulich, ausgesühnt und ohne deutsches Stigma? das fänd mancher ungerecht kann ich mir vorstellen. So muß ich wohl ein paar Worte wenn sie auch diesmal gezählt, gezählt gewogen und zerteilt wurden in das was wahr ist und sein wird mir aufheben für die Zeit nach ihnen wo das Repertoire schrumpft – was schon merklich an der Weise wies eben zu spielen anfängt als ich nur wegen der a-töne diese Wendung wählte. Sie müssen doch zuhören... nicht schweifen gehn nach dem Phosphorgrün der Mattscheibe; wenn auch dieses aufgebraucht ausgeleuchtet haben wird bleibt ja nur das total-analoge Prinzip. Also sollten wir bevor es dazu kommt das Gebäude aufgerichtet haben im Sinne der hier vorherrschenden Methode zur Synthese von Zweck - Stoff - Form die wir nur an gegebenem Ort rechtzeitig einsehn müssen. Das heißt erneut das Sigel zu beachten an 1/8/3/2. Denn was überhaupt brächte es euch ginget ihr darüber? Nichts wofür sich (Tod etwa?) lohnte... nichts, das euch nur irgendwohin führt da man an Glück nicht mehr denkt: weil ihr es wie ein Eigentum schon längst besessen habt und nicht aufgegeben für Blütenträume/<em>schwimmende Hölderlintürme,</em> die einem heut sowieso keiner mehr glaubt. Die gehörn beiläufig in die kalte Glut. Glück aber sollte man dann schätzen lernen wenn eim danach ist... glücklichsein ist wie die Wiege auf der Mitte vom Leben; manches wird sanft geschaukelt davon und manches sanft zerteilt. K hört: Suchet das Gute!
+## 
+Sich aber dabei mehr auf die Sicherheit gebende Stimmung zu verlassen als es gerade angebracht ist im Hinblick auf schon beendetes Arbeiten am bestehenden Textkörper (was hier heißt: Kolbenputzen) führt meist dazu daß einem die Grenze des Augenblicks näher erscheint als man sie gerne wüßte. So habe ich im Heraustreten aus dem alten Material wenn es zu einem neuen ersten Satz gekommen ist oft das Gefühl nicht weiter unbedingt geradeheraus ... zu können sondern das Abwägen und Messen der eben n. begradigten und in ihrer Unvollkommenheit berichtigten Stellen nun im Geiste schon an dem neu entstehenden jungfräulichen Wort ebenfalls anlegen zu müssen. Daß dabei jedoch wenig wächst sieht man schon daran wie langsam und schwerfällig der Satz hier immer in seine Bestandteile zu zerfließen droht n. ehe er bis ans Ende gedacht worden ist. Und wenn er überhaupt an sein Ende findet bleibt trotzdem ungewiß ob er jemals den Schwung aufrechterhalten kann der mir notwendig erscheint für den Anfang eines nächsten und eines nächsten und weiteren Satzes. Sie sehn jedoch mit dem Loslassen der Initianten schon einiges dazu getan und wie wir voranschreiten werden - auch wenn der längere Aufenthalt im Alten fast den freien Tag verbraucht. Aber Tage... was sind sie gegen den Abend und eine verregnete Dämmerung. <em>Seit ein Gespräch wir sind...</em> 
+## 
+Man hat es ihm eingebrannt und die Generation, die sich an ihre Geschichte nur aus Zeugnissen der anderen erinnert. Einer davon zu sein, macht was ich mir vom modernen Deutschen erhoffte als ich zu schreiben lernte alles zunichte; so, daß nur eines Abkehr davon zurück in seine Klassik möglich erscheint. Sie lesen wenn Sie das lesen wenig wovon heute überhaupt geschrieben denn gesprochen wird sondern ein zeitgemäßem Ausdruck verweigertes dessen Heimat man eher dort sucht wo es n. auf den geringsten Widerstand seiner Freunde treffen sollte - das Deutsch der Lagerinsassen, den naiven Dialekt d. Ghettos, Vorstadtidiom. Das zu verstehn begibt sich seiner gymnasialen Studiengelahrtheit ziemlich weit hinab zu Teppichten. Mögen andere darüber urteilen wie es um die schlechten Zeugnisse wirklich bestellt war für die man so scheiße behandelt wird; wenn alles so einfach in Zahlen auszudrücken ist könn sie mir ja sagen, wo die Energie nach den ES steckt auf der Grundlage die Mieten kassiert und Arbeitslöhne berechnet werden. Und ich glaube nicht viel werden mit ihrer Herkunft aus dem &quot;Luftreich des Traumes&quot; so zufrieden daß sie nicht auch daran beteiligt sein wolln. Das zu wahrgenommenen Dissonanzen zwischen Berliner Vorstadt und Vorstadt Spandau. Aber damit eilt nur die Zeit und was sich hier ereignet hat dort seine Tragfähigkeit n. lange nicht bewiesen wo wir uns von den Buchstaben trennen für den nächsten, den größeren Zusammenhang in dem sie erscheinen könnten (klassisch zwischen zwei Buchdeckeln). Erlaubt sei mir n. eine Bemerkung. Wir haben uns und wir seid vornehmlich ihr die anders wolln als es die Sprache vorschreibt zu weit von ihr selbst entfernt als daß wir immer n. genau zu hören imstande wären was sie uns eigentlich rät. Dann kommt ein klarer Ton an und der ihn hört wird dankbar. Dies zu zeigen gelingt ihm dann ein Wort, eines der 1.000 um die er sich verausgabte. Aber es klingt in ihm und er hat es für euch aufbewahrt alle anderen dies wolln. Also wer da Ohren hätte... <em>denn seit ein Gespräch wir sind</em> und hören können voneinander hat vieles sich ereignet. Nicht alles ging verloren in den Lagern. Wir dürfen hoffen, daß sie n. einmal genug Glauben schaffen um sich zu erneuern. Wenn diesmal über uns Gericht gehalten wird, sind wir von ihrem Zeugnis abhängig.</p>
+<div class="footnote-definition" id="1"><sup class="footnote-definition-label">1</sup>
+<pre><code>ein Bauproblem
+</code></pre>
+<p>#buch4 #edit02</p>
+</div>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="03.06.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next" href="04.02.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="03.06.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="04.02.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

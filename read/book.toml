@@ -3,4 +3,7 @@ authors = ["estee"]
 language = "en"
 multilingual = false
 src = "src"
-title = "benjamin"
+title = "benjaminfeldkraft"
+
+[output.html]
+git-repository-url = "https://github.com/esteeschwarz/benjaminfeldkraft"

@@ -1,0 +1,2 @@
+## Neuf - Des 3. Beginn
+liegt schon zwei Nächte hinter uns, unseren Vorgängigen und vor aller jemals existierenden Handlung. Die hat es nie gegeben und wird es auch in diesem 3-Band nicht geben. Anfangen ist das einzige Verdienst gewesen, das ich für mich beanspruchen durfte, tat es also und fing wie der an. Mit den letzten Worten der zweiten Einheit: die sind gezählt, gezählt, gewogen und zerteilt (mene mene tekel upharsin: ********* Die Konstante wird nach seiner Berechnung heute 5,26785 betragen). Das wird das absolut letzte Wort dieses Buches gewesen sein.   

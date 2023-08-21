@@ -1,0 +1,2 @@
+## ernte 2010
+Der Gott wurde sichtbar, den ich vielleicht herausgefordert hatte, als ich über das Eis ging hinundzurück und immer mit den Gedanken darüber, daß es mich ja halten muß; er zerriß es, eben in dem Moment, wo mir die Methode aufdämmerte. Es gab nur diese eine Möglichkeit, ohne schuldig zu werden... la descente d&#39;Orphee aux enfers. Aber sie sollte anders sterben, im zweiten Versuch.    

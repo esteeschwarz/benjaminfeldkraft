@@ -1,0 +1,2 @@
+## HB
+Es war über ihm, und er getrennt davon im Innersten, bestehend zuerst für sich selbst, nicht für es, für Ihn. Doch das war alles b.d.W.s.w.h. (St. King). Jetzt gibt es neue Zugänge, die ein Anwachsen eigentlich von innen heraus erfordern. Was aber passiert, ist, daß mit jedem (Buchstaben-Wort-Gedanken)-Splitter den die Seite aufnehmen muß der Komplex sich chaotisch verzweigt an zufälligen Endpunkten seiner Ausdehnung... wir haben hier Wachstum vor uns, das man wenn es eine biologische Funktion hätte als Krebs bezeichnen könnte. Ist das nach der Entropie?   

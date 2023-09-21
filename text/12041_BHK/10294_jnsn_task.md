@@ -8,7 +8,7 @@
 - generell anklage, nachholen, aktueller anlasz
 - tadel lächerlich, wenn ich mir überlege, worüber ich eigentlich schreiben wollte
 - tagebuchaufzeichnung?
-- okan nachhause geschickt für sowas
+- o. nachhause geschickt für sowas
 - kinder? entschuldigung?
 - plot
 

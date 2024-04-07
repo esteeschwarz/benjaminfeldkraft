@@ -1,0 +1,35 @@
+---
+title: "14046.string output"
+author: "esteeschwarz"
+date: "2024-01-08"
+output:
+  md_document:
+   variant: markdown_phpextra+backtick_code_blocks
+   pandoc_args: "--wrap=none"
+# post:
+#   postid: 62
+#   categories: snc,exit
+#   tag: | 
+#     exit
+#     snc
+#     grid
+#   action: editPost
+#   publish: false
+  
+---
+
+```{r echo=F}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r echo=F,warning=FALSE}
+cat.array<-read.csv("https://potmaschin.rotefadenbuecher.de/echtzeit/wp-content/uploads/catarray.csv")
+m<-length(cat.array)
+m1<-sample(1:m,1)
+```
+##### grid:2
+# am anfang das verbum
+gebe die bezüge auf. hand. wand. der teller usw..., wonach ich jetzt wieder suche die ganze zeit. also ich hatte auch aufgegeben (wg. der wiederholung) das zeug vorher zu lesen. alles sofort ausgestelllt..., nie ein wort verwaschen.
+ob ich das nochmal so? fragt die lektorin der anderen..., immer vergesse ihren namen... norden udgl. das daran hängt, diese dunklen landschaften. manchmal noch lese sogar die bücher, die sie überall vergisst; eins, das auch von meiner landschaft handelt. hab sie nie gefragt, wo das war. doch komm mir die vögel bekannt vor und ich halte es deshalb einfach für meine landschaft, auch wenn das längst wegspült unter der stadt. du hast wieder deine zeitung liegengelassen, stein.
+das soll sofort altern, wenn ich es losgebe. am ausgang dieser infants bestelle ich keine grüsze mehr..., nehme nur noch die reha in anspruch, verlege mich aufs betteln um sedimentbrocken, die die avantgarde / danach nur noch raw strings, die mir schon lange eingefallen sind, allem voran `r cat.array[1,m1]`. doch diese worte will niemand  lesen (https://potmaschin.rotefadenbuecher.de/echtzeit/14046-string-output)..., der text war voll davon.
+

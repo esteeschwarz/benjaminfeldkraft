@@ -1,0 +1,29 @@
+---
+title: "14046.string output"
+author: "esteeschwarz"
+date: "2024-01-08"
+output:
+  md_document:
+   variant: markdown_phpextra+backtick_code_blocks
+   pandoc_args: "--wrap=none"
+# post:
+#   postid: 62
+#   categories: snc,exit
+#   tag: | 
+#     exit
+#     snc
+#     grid
+#   action: editPost
+#   publish: false
+  
+---
+
+```{r echo=F}
+knitr::opts_chunk$set(echo = TRUE)
+```
+##### grid:3
+# 14117.fkd.by.heart
+vielleicht..., schläfst du jetzt mal aus... / vielleicht gehst du jetzt mal raus: die bahn fährt wieder. endlich in einem andern hof lungern es würden biere bewegt ich kann mich kaum noch, drauszen ist das trotzdem trotzdem lasse ich die bahnen vorbeifahren der einstieg fällt mir schwer :beamen: durch die stadt war mal eine option die wir verrauscht haben also der einstieg fällt schwer.
+das vielleicht ist aufgebraucht, du brauchst jetzt eine entscheidung. wir sehen uns im dunkeln, die wegbewegten biere neben den stufen. nach oben hin freie fenster, aber keine energie dort etwas zu vermuten; die menschen so unberechenbar, dasz es nur anstrengt, sich zimmer auszumalen, in denen sie nachts... versuche dir das zu beschreiben: ich sehe überall nur töpfe und geschirr, fernes geklingel piepen der maschinen wenn sie vergessen das zu bedienen. in denen sie nachts..., auch spülungen und jemand ruft den aufzug.
+vielleicht schläfst du morgen aus und die ganzen kekse haben sich gelohnt in kauf zu nehmen, aber länger als 5 geht nicht mehr; bevor das alles erwacht vor der braut ich nehme 1 auszug an 1 bitteres summen bevor der braut.
+

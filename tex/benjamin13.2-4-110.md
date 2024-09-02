@@ -1,0 +1,4 @@
+## (The Empty Book Of Truth)
+## (The Empty Book Of Truth)
+A novel to understanding what is right and what is wrong   
+ Des Vierten Teils gehn jetzt nur n. die Trojer ab, von Port 975, was sich nicht verhindern ließ unter dem Primat der notwendigen Maßnahmen zur Erhaltung der Art - das ging mich dabei so an, daß ich mir besser nichts weiter vorstellte. Wir müssen abwärts jetzt und das wird ein langer Weg. Und nichts erhält sich von allein, es gibt etwas zu tun außerhalb der Geschichtsschreibung, etwas muß auch verhandelt werden innerhalb des Geschehens das nicht heißt es bestehe aus sich selbst. Also werden wir in die Zukunft sehnwo ich weiß stecken die Fäden an. Und um zurück zu können hebe ich mir ein paar der Gelegenheiten zu sprechen n. auf für die Momente des Schweigens. Nur von hier wegkommen wird irgendwann zählen. Bis da müssen Worte passieren und Dinge.   

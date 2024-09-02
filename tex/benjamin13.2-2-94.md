@@ -1,0 +1,4 @@
+## E
+Wir sprechen gar nicht von der Energie, die deine Entwürfe mich kosten. Jeden Schnipsel hebst du auf, der irgendwann vielleicht zurückgegeben werden muß - es sind ja nicht deine... wem aber gehören sie dann?    
+- es tut mir leid, Sie mit dem Material belasten zu müssen, ich habe die Hoffnung nicht aufgegeben, daß Sie etwas finden werden, das endlich aussprechen täte, was ich wirklich gewesen bin. Sie haben die Bänder entdeckt. Das ist gut für den Anfang. Hören Sie hin genau hin, ich stecke irgendwo dazwischen als meine Stimme.   
+  Mit den Händen habe ich eine Öffnung gegraben. Siehst du den Steinhaufen? das ist dein Auswurf von 40 Jahren Musik. Aber wenn ich das alles durchhören soll auf der Suche nach Stimmen wird einiges andere überflüssig werden müssen fürchte ich: es könnte sein, daß sich deine Bücher nicht selbst aufheben, sondern vorher selbst sich aufgeben.   

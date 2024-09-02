@@ -1,0 +1,2 @@
+## HB.
+Doch zuerst eine Frage: wie weit also würdet ihr gehn wenn nicht nur der Besitz des Traumes davon abhinge sondern eigentlich weil es den Sinn verloren hätte euer Leben durch sein Scheitern endlich faßbar würde als nur das was es auch ist: euch entgehende Realität hinter jenem den anderen längst durchsichtig gewordenen Schleier vor mir? Das sei Ich, das ist mein Rat aus Franz Hart, München 1950: (&quot;) Zweck, Stoff, Form -<sup><a id="ffn16" href="#fn16" class="footnote">16</a></sup>   

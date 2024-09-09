@@ -1,0 +1,2 @@
+## XII.
+...das ist, damit sie nicht so heiß wird und es ist der heißeste Sommer werden sie irgendwann sagen, hab ich n. nicht gehö     rt seit den ersten meteorologischen Aufzeichnungen in Berlinvö    llig verbrannt und nur die sehen n.   nicht aus wie Steppe. Die Temperaturender Regen auchTropfen auf heiße Bö den. Ein Gewitter. Aber es bleibt ruhig.Das letzte Bild der Nacht. Meine Mädchen gehn schlafen.   

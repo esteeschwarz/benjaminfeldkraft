@@ -1,0 +1,112 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\author{}
+\date{\vspace{-2.5em}}
+
+\begin{document}
+
+\subsection{Das III. Buch}\label{das-iii.-buch}
+
+Im Gang zu den höhergestellten Invaliden, den ich betrete, liegen Bücher
+aus auf kleinen Tischen. Einmal nahm ich eines mit auf mein Zimmer, als
+niemand mich sehen konnte. Es war ganz das falsche Buch, merkte ich
+später. Aber ich hatte mich aus einem mir bis jetzt unbekannten Grund
+dafür entschieden und versuche, herauszufinden, warum es mir so
+schwerfiel, es zu lesen. Es war vielleicht ein Sachbuch gewesen oder
+eine kleine Geschichte der Musik im 20. Jh.., jedenfalls kam darin vor
+ein Bericht über eine unbekannt gebliebene Komponistin Ewa Laplace, die
+nur deshalb namens erwähnt wurde, weil sie bei dem Versuch, die 10. von
+Mahlers Sinfonien aus den erhaltenen Versatzstücken zu rekonstruieren
+auf etwas gestoßen ist, das der Autor scheinbar für wichtig gehalten
+hatte, uns mitzuteilen. Es handelte sich dabei um eine Bekenntnisschrift
+in Notenform, die angab, warum Mahler selbst sich nicht mehr dazu in der
+Lage sah, seine von ihm als erstes Echo seines lebendigen L.n.ms
+vernommenene Musik zu vollenden: es hieß, er hätte die ihm verbleibende
+Zeit vom Bewußtseines nahenden Endes einzig damit verbringen müssen,
+alles Vorhergegangene zu vernichten, wenn er die Gestaltung dieser
+symphonie absolut ausführen wollte. Darum: es war ganz das falsche Buch.
+Man konnte nicht darin gelesen haben, ohne hernach zu bezweifeln, daß es
+zu lesen in gewohnter Weise, nämlich der Erfassung von Zusammenhängen
+durch die Rekombination von Wörtern im eigenen Geist, die der Autor
+\emph{in seinem Geist} zusammengefügt hatte, die richtige sein soll, den
+Sinn \emph{des} Buches aufzudecken, das man in der Hand hielt. Vielmehr
+schlug er mit seinem Verweis auf die Laplacesche Idee von der einzigen
+Möglichkeit einer Renaissance von Urmaterial durch die Vernichtung allen
+Zuwachses und der resultanten Vermeidung künftiger Forschung ein Kapitel
+der Restauration auf, das sich nicht darauf beschränken würde, "nichts
+mehr dazu{[}zu{]}tun und in den Anfängen {[}zu{]} verharren", sondern
+das den Golem, den es meint, nicht mehr untersuchen zu müssen, ständig
+zu schaffen verdammt ist. Das Mädchen Laplace selbst, das Mahler
+n.~kannte, verhielt sich zum Gegenstand ihrer Arbeit so konsequent, daß
+sie die einzige Quelle, auf die man sich heute berufen könnte, wenn man
+weiterarbeiten wollte ihre Interpretation der Auslassung in ihren Tod
+mitnahm, auf hoher See. In den Archiven des Aaltomuseums in Jyvväskyla
+findet man sie in sechs Karteikarten einer ausleihenden Position:
+\emph{Sie schrieb nieder, was sie hörte, sie behielt, was sie wußte und
+gab nur weiter, was wahr war.}
+
+\end{document}
